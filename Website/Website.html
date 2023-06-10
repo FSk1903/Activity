@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!--Main Conatiner  -->
+    <div class="main">
+
+        <!-- Left Container -->
+        <div class="container">       
+                <!-- image -->
+                <div class="wrapper">
+                    <div class="image"></div>
+                </div>        
+        </div>
+
+        <!-- Right container -->
+        <div class="container" id="right">
+                
+                <!-- small container -->
+                <div class="small">
+                    <p>Welcome back</p>
+                    <h1 id="Login"><b>Login to your account</b></h1>
+                     
+
+                    <!-- Form -->
+                    <form name="Myform">
+                        <label id="lab">Email</label><br>
+                        <input class="inp" id="em" type="email" name="Email-Id" placeholder="Enter your e-mail" value="">
+                        <span id="Message1"></span><br>                                             
+
+                        <label class="lab">Password</label><br>
+                        <input class="inp" id="pw" type="password" name="Password" placeholder="Enter your password" value=""><br>
+                        
+                        <!-- Error Message-->
+                        <span id="Message2"></span>
+                    </form>
+                
+
+                    <!-- mid container -->
+                    <div class="mid">
+                        <div class="radio">
+                            <input type="radio" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        
+
+                        <div class="anchor">
+                            <a id="anchor" href="">Forgot password?</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div>
+                        <button class="btn1" id="btn" type="submit" value="Submit" onclick="func()">Login now</button><br>
+                        <button class="btn2"><img id="logo"  src="logo.png">Or sign-in with google</button>
+                    </div> 
+
+                </div>
+           
+                <div class="footer">
+                    <footer>Don't have an account? <a class="m1" id="anchor" href="">Join free today</a></footer>
+                </div>    
+
+        </div>
+
+    </div>
+</body>
+
+<script src="validation.js"></script>
+
+</html>
